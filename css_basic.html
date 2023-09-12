@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Activity 5</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <style>
+            ul li {
+                background-color: hsla(0, 0%, 0%, 0.8);
+                padding: 5px;
+            }
+            #home {
+                padding: 5%;
+                color: white;
+                height: 70vh;
+                text-align: center;
+            }
+            #title {
+                font-weight: bold;
+                font-size: 6rem;
+                color: grey;
+            }
+            .stacks {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 80px;
+                margin: 50px 0;
+            }
+            .stacks .stack {
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+            }
+            .product {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 20px 0;
+            }
+            .item-box {
+                background-color: white;
+                border-radius: 10px;
+            }
+            .item-box p {
+                text-align: center;
+                font-weight: bold;
+            }
+            .item {
+                height: 200px;
+                width: 250px;
+                object-fit: cover;
+                padding: 20px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-brand">
+                <a href="#"
+                    ><img
+                        src="icons/wikipedia.png"
+                        alt="Wikipedia"
+                        class="logo"
+                /></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a
+                            href="#home"
+                            class="nav-link active"
+                            style="font-weight: bold; color: white"
+                            >Home</a
+                        >
+                    </li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <a href="#" class="anchor" style="margin-left: 20px"
+                        >Login</a
+                    >
+                    <a href="#" class="anchor signup">Sign up</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1 id="title">Welcome Developers!</h1>
+                <p><i>"Join us to become a web developer"</i></p>
+                <button type="button" class="button">Apply Now!</button>
+                <div class="stacks">
+                    <div>
+                        <img
+                            src="tech stack/html.png"
+                            alt="html"
+                            class="stack"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="tech stack/css-3.png"
+                            alt="css"
+                            class="stack"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="tech stack/figma.png"
+                            alt="figma"
+                            class="stack"
+                        />
+                    </div>
+                    <div>
+                        <img src="tech stack/js.png" alt="js" class="stack" />
+                    </div>
+                    <div>
+                        <img
+                            src="tech stack/nodejs.png"
+                            alt="nodejs"
+                            class="stack"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="content">
+                <h2>About</h2>
+                <hr />
+                <br />
+                <div class="videos">
+                    <div class="media">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/2KYtUtsC-EI?si=2YzHII9j4BxMge_N"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/Ra41sUBiEgo?si=A_Fm0svnPIMJ15ml"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="media">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/JBGaUNkqBIo?si=foDOUHcv3q9hDuef"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/U5oXgt7u6pI?si=xpCfBKW_KSthm0wg"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="content" id="Services">
+                <h2>Services</h2>
+                <hr />
+                <br />
+                <div class="products">
+                    <div class="product">
+                        <div class="item-box">
+                            <img src="services/1.jpg" alt="1" class="item" />
+                            <p>$ 129</p>
+                        </div>
+                        <div class="item-box">
+                            <img src="services/2.jpg" alt="2" class="item" />
+                            <p>$ 129</p>
+                        </div>
+                        <div class="item-box">
+                            <img src="services/3.jpg" alt="3" class="item" />
+                            <p>$ 129</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="item-box">
+                            <img src="services/4.jpg" alt="4" class="item" />
+                            <p>$ 129</p>
+                        </div>
+                        <div class="item-box">
+                            <img src="services/5.jpg" alt="5" class="item" />
+                            <p>$ 129</p>
+                        </div>
+                        <div class="item-box">
+                            <img src="services/6.jpg" alt="6" class="item" />
+                            <p>$ 129</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content" id="contact">
+                <h2>Contact</h2>
+                <form action="/" class="form" method="post">
+                    <fieldset>
+                        <legend>Let's work together!</legend>
+                        <div class="inputs">
+                            <input
+                                type="text"
+                                name="name"
+                                class="input"
+                                placeholder="Name"
+                                required
+                            />
+                        </div>
+                        <div class="inputs">
+                            <input
+                                type="email"
+                                name="email"
+                                class="input"
+                                placeholder="Email Address"
+                                required
+                            />
+                        </div>
+                        <div class="inputs">
+                            <input
+                                type="tel"
+                                name="phone"
+                                class="input"
+                                placeholder="Contact Number"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <button type="submit" class="button submit">
+                                Submit
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <a href="https://www.base404.com" class="base404">Base 404.</a>
+            <div class="socials">
+                <a href="https://www.google.com"
+                    ><img
+                        src="icons/icons8-google-96.png"
+                        alt="Google"
+                        class="social" /></a
+                ><a href="https://www.facebook.com"
+                    ><img src="icons/fb.png" alt="Facebook" class="social" /></a
+                ><a href="https://www.youtube.com"
+                    ><img
+                        src="icons/icons8-youtube-96.png"
+                        alt="Youtube"
+                        class="social"
+                /></a>
+            </div>
+        </footer>
+    </body>
+</html>
